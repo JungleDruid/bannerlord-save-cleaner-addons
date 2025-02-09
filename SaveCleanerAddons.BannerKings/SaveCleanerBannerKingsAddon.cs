@@ -70,13 +70,13 @@ internal static class SaveCleanerBannerKingsAddon
                     }
                     case CouncilMember councilMember:
                     {
-                        if (councilMember.Member == hero)
+                        if (dryRun)
                         {
-                            if (!dryRun)
-                            {
-                                councilMember.SetMember(null);
-                            }
-
+                            result = councilMember.Member == hero;
+                        }
+                        else
+                        {
+                            if (councilMember.Member == hero) councilMember.SetMember(null);
                             result = true;
                         }
 
@@ -84,9 +84,13 @@ internal static class SaveCleanerBannerKingsAddon
                     }
                     case Estate estate:
                     {
-                        if (estate.Owner == hero)
+                        if (dryRun)
                         {
-                            if (!dryRun) estate.SetOwner(null);
+                            result = estate.Owner == hero;
+                        }
+                        else
+                        {
+                            if (estate.Owner == hero) estate.SetOwner(null);
                             result = true;
                         }
 
@@ -94,9 +98,13 @@ internal static class SaveCleanerBannerKingsAddon
                     }
                     case DiplomacyGroup diplomacyGroup:
                     {
-                        if (diplomacyGroup.JoinTime.ContainsKey(hero))
+                        if (dryRun)
                         {
-                            if (!dryRun) diplomacyGroup.JoinTime.Remove(hero);
+                            result = diplomacyGroup.JoinTime.ContainsKey(hero);
+                        }
+                        else
+                        {
+                            diplomacyGroup.JoinTime.Remove(hero);
                             result = true;
                         }
 
