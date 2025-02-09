@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveCleanerAddons.Diplomacy", "SaveCleanerAddons.Diplomacy\SaveCleanerAddons.Diplomacy.csproj", "{D9D7D8EF-5509-4E7B-ACA7-E8F125D2F4F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveCleanerAddons.BannerKings", "SaveCleanerAddons.BannerKings\SaveCleanerAddons.BannerKings.csproj", "{EDAEB9D5-C990-421F-B021-C98846FA14DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -14,6 +16,10 @@ Global
 		{D9D7D8EF-5509-4E7B-ACA7-E8F125D2F4F0}.Debug|x64.ActiveCfg = Debug|x64
 		{D9D7D8EF-5509-4E7B-ACA7-E8F125D2F4F0}.Debug|x64.Build.0 = Debug|x64
 		{D9D7D8EF-5509-4E7B-ACA7-E8F125D2F4F0}.Release|x64.ActiveCfg = Release|Any CPU
+		{EDAEB9D5-C990-421F-B021-C98846FA14DC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EDAEB9D5-C990-421F-B021-C98846FA14DC}.Debug|x64.Build.0 = Debug|Any CPU
+		{EDAEB9D5-C990-421F-B021-C98846FA14DC}.Release|x64.ActiveCfg = Release|Any CPU
+		{EDAEB9D5-C990-421F-B021-C98846FA14DC}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

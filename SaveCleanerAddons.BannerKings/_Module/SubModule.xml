@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+    <Name value="SaveCleanerAddons.BannerKings"/>
+    <Id value="SaveCleanerAddons.BannerKings"/>
+    <Version value="v1.1.1.0"/>
+    <Official value="false"/>
+    <DefaultModule value="false"/>
+    <SingleplayerModule value="true"/>
+    <MultiplayerModule value="false"/>
+    <DependedModules>
+        <DependedModule Id="SaveCleaner"/>
+        <DependedModule Id="BannerKings"/>
+    </DependedModules>
+    <SubModules>
+        <SubModule>
+            <Name value="SaveCleanerAddons.BannerKings"/>
+            <DLLName value="SaveCleanerAddons.BannerKings.dll"/>
+            <SubModuleClassType value="SaveCleanerAddons.BannerKings.SubModule"/>
+            <Tags/>
+        </SubModule>
+    </SubModules>
+</Module>
